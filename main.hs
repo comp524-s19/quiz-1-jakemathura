@@ -1,6 +1,6 @@
 finalGrade :: [Int] -> [Int] -> Int
 finalGrade grades weight =
-    return 80
+    (sum (zipWith (*) grades weight)) `div` (sum weight)
       
 main :: IO ()
 main = return ()
